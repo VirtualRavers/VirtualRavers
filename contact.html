@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zxx" class="uk-background-white dark:uk-background-gray-100 dark:uk-text-gray-20 uk-dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact - Virtual Ravers</title>
+        <meta name="Virtual Ravers NFT Collection" content="Virtual Ravers NFT Collection">
+        <meta name="theme-color" content="#1b2129">
+
+        <!-- preload head styles -->
+        <link rel="preload" href="assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="assets/fonts/unicons/Unicons.woff?lkolxg" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@8.3.2/swiper-bundle.min.css" as="style">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.15.1/dist/css/uikit.min.css" as="style">
+
+        <!-- <link rel="preload" href="assets/css/theme/main.min.css" as="style"> -->
+
+        <!-- preload footer scripts -->
+        <link rel="preload" href="assets/js/uikit.min.js" as="script">
+        <link rel="preload" href="assets/js/uikit-components.js" as="script">
+        <link rel="preload" href="assets/js/jquery.min.js" as="script">
+        <link rel="preload" href="assets/js/swiper-bundle.min.js" as="script">
+        <link rel="preload" href="assets/js/feather.min.js" as="script">
+        <link rel="preload" href="assets/js/typed.min.js" as="script">
+        <link rel="preload" href="assets/js/anime.min.js" as="script">
+        <link rel="preload" href="assets/js/app.js" as="script">
+        <link rel="preload" href="assets/js/swiper-helper.js" as="script">
+        <link rel="preload" href="assets/js/typed-helper.js" as="script">
+        <link rel="preload" href="assets/js/anime-helper.js" as="script">
+        <link rel="preload" href="assets/js/anime-helper-defined-timelines.js" as="script">
+
+        <!-- include styles -->
+        <script src="assets/js/app-head.js"></script>
+        <link rel="stylesheet" href="assets/css/theme/main.min.css">
+
+        <!-- include scripts -->
+        <script src="assets/js/uikit.min.js"></script>
+        <script src="assets/js/uikit-components.js"></script>
+    </head>
+    <body class="uni-body">
+
+        <!-- Dark/Light toggle -->
+
+        <!-- Dark/Light toggle -->
+        <div class="darkmode-trigger uk-position-bottom-right uk-position-small uk-position-fixed uk-box-shadow-large uk-radius-circle" data-darkmode-toggle="">
+            <label class="switch">
+                <span class="sr-only">Dark mode toggle</span>
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <!-- Menu modal -->
+        <div id="uni_mobile_menu" class="uni-mobile-menu uk-offcanvas" data-uk-offcanvas="mode: push; overlay: true; flip: true; selPanel: .uk-offcanvas-bar-panel;">
+            <div class="uk-offcanvas-bar-panel uk-panel dark:uk-background-gray-100">
+                <div class="uni-mobile-menu-wrap uk-flex-column uk-flex-between" data-uk-height-viewport="offset-bottom: true;">
+                    <div class="uni-mobile-menu-content">
+                        <header class="uk-card uk-card-2xsmall uk-flex-middle uk-flex-between">
+                            <div class="uk-flex-1">
+                                <button aria-label="Close Menu" class="uk-offcanvas-close uk-button uk-button-small uk-button-icon uk-button-default uk-button-outline uk-radius-circle" type="button">
+                                    <i class="uk-icon-small" data-feather="arrow-left"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h5 class="uk-h5 uk-text-uppercase uk-margin-remove">Navigation</h5>
+                            </div>
+                            <div class="uk-flex-1"></div>
+                        </header>
+                        <hr class="uk-margin-remove">
+                        <div class="uk-card uk-card-small">
+                            <div class="uk-panel">
+                                <ul class="uk-nav uk-nav-default">
+                                    <li class="uk-nav-header">Home</li>
+                                    <li><a href="index.html">🏠</a></li>
+                                    <li class="uk-nav-header">Virtual Ravers World</li>
+                                    <li><a href="DAO-access.html">DAO Access</a></li>
+                                    <li><a href="index.html#uni_minting">Mint NFT</a></li>
+                                    <li><a href="https://virtualravearena.live">Virtual Rave Arena</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li class="uk-nav-header">Content &amp; Privacy</li>
+                                    <li><a href="terms.html">Terms of use</a></li>
+                                    <li><a href="privacy.html">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Connect wallet modal -->
+        <div id="uni_connect_wallet" class="uk-modal-full" data-uk-modal>
+            <div class="uk-modal-dialog">
+                <div class="uk-position-top uk-position-z-index-negative" data-uk-height-viewport="">
+                    <div class="uk-position-cover uk-background-cover uk-opacity-10 dark:uk-hidden" data-src="assets/images/gradient-01.png" data-uk-img></div>
+                    <div class="uk-position-cover uk-background-cover uk-opacity-20 uk-hidden dark:uk-visible" data-src="assets/images/gradient-01.png" data-uk-img></div>
+                </div>
+                <button class="uk-modal-close-full uk-close-large uk-position-small" type="button" data-uk-close></button>
+                <div class="uk-container">
+                    <div class="uk-grid uk-flex-center uk-flex-middle uk-child-width-1-2@m uk-section" data-uk-grid data-uk-height-viewport>
+                        <div>
+                            <div class="uk-panel uk-text-center">
+                                <h2 class="uk-h5 uk-h3@s uk-h2@l uk-margin-remove">Connect your wallet</h2>
+                                <div class="uk-grid uk-grid-xsmall uk-grid-small@m uk-child-width-1-2@m uk-margin-medium-top uk-margin-large-top@m" data-uk-grid="">
+                                    <div>
+                                        <div class="uk-panel uk-card uk-card-small uk-card-medium@m uk-card-border uk-radius-medium uk-radius-large@m uk-box-shadow-hover-small hover:uk-border-primary">
+                                            <a href="#metamask" class="uk-position-cover"></a>
+                                            <img src="assets/images/icon-metamask.svg" alt="metamask">
+                                            <h4 class="uk-text-bold uk-h5@m uk-margin-small-top uk-margin-medium-top@m">Metamask</h4>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-panel uk-card uk-card-small uk-card-medium@m uk-card-border uk-radius-medium uk-radius-large@m uk-box-shadow-hover-small hover:uk-border-primary">
+                                            <a href="#bitgo" class="uk-position-cover"></a>
+                                            <img src="assets/images/icon-bitgo.svg" alt="bitgo">
+                                            <h4 class="uk-text-bold uk-h5@m uk-margin-small-top uk-margin-medium-top@m">BitGo</h4>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-panel uk-card uk-card-small uk-card-medium@m uk-card-border uk-radius-medium uk-radius-large@m uk-box-shadow-hover-small hover:uk-border-primary">
+                                            <a href="#trustwallet" class="uk-position-cover"></a>
+                                            <img src="assets/images/icon-trustwallet.svg" alt="trustwallet">
+                                            <h4 class="uk-text-bold uk-h5@m uk-margin-small-top uk-margin-medium-top@m">Trust Wallet</h4>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-panel uk-card uk-card-small uk-card-medium@m uk-card-border uk-radius-medium uk-radius-large@m uk-box-shadow-hover-small hover:uk-border-primary">
+                                            <a href="#coinbase" class="uk-position-cover"></a>
+                                            <img src="assets/images/icon-coinbase.svg" alt="coinbase">
+                                            <h4 class="uk-text-bold uk-h5@m uk-margin-small-top uk-margin-medium-top@m">Coinbase</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wrapper start -->
+        <div class="wrap">
+
+            <!-- Header start -->
+            <header class="uni-header">
+                <div class="uni-header-navbar" data-uk-sticky="top: 70; show-on-up: false; animation: uk-animation-slide-top" data-anime="opacity:[0, 1]; translateY:[-24, 0]; onview: true; delay: 0;">
+                    <div class="uk-container">
+                        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+                            <div class="uk-navbar-top">
+                                <div class="uk-navbar-left">
+                                    <a class="uk-logo uk-navbar-item uk-h4 uk-h3@m uk-margin-remove" href="index.html"> <img class="uk-visible dark:uk-hidden" width="120" src="assets/images/nerko-light.svg" alt="Nerko" loading="lazy"> <img class="uk-hidden dark:uk-visible" width="120" src="assets/images/nerko-dark.svg" alt="Nerko" loading="lazy"> </a>
+                                </div>
+
+                                <div class="uk-navbar-right uk-flex-1 uk-flex-right">
+                                    <ul class="uk-navbar-nav dark:uk-text-gray-10 uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80" data-uk-navbar-bound>
+                                        <li><a href="#uni_minting">Minting</a></li>
+                                        <li><a href="#uni_about">About</a></li>
+                                        <li><a href="#uni_collection">Collection</a></li>
+                                        <li><a href="#uni_roadmap">Roadmap</a></li>
+                                        <li><a href="#uni_faq">FAQ</a></li>
+                                    </ul>
+                                    <div class="uk-navbar-item">
+                                        <ul class="uk-subnav uk-subnav-small uk-visible@m">
+                                            <li>
+                                                <a href="https://twitter.com/virtualravers"><i class="uk-icon unicon-logo-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://discord.com/virtualravers"><i class="uk-icon unicon-logo-discord"></i></a>
+                                            </li>
+                                        </ul>
+
+                                        <!-- header: call to actions -->
+                                        <a href="#uni_connect_wallet" class="uk-button uk-button-medium@m uk-button-default uk-button-outline uk-margin-left uk-visible@l" data-uk-toggle="">
+                                            <span>Connect wallet</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="uk-navbar-item uk-hidden@m">
+                                        <a href="#uni_connect_wallet" class="uk-button uk-button-medium@m uk-button-icon uk-hidden@m uk-margin-small-right" data-uk-toggle="">
+                                            <i class="uk-icon unicon-wallet"></i>
+                                        </a>
+                                        <a href="#uni_mobile_menu" data-uk-toggle>
+                                            <span class="uk-icon uk-icon-medium material-icons">menu</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Header end -->
+
+            <div class="uni-contact uk-section uk-section-large@m uk-panel uk-overflow-hidden uk-border-top">
+
+                <!-- Page header -->
+                <header class="uni-page-header">
+                    <div class="uk-container">
+                        <h1 class="heading uk-h3 uk-h1@m uk-text-center">Contact</h1>
+                    </div>
+                </header>
+                <div class="uk-margin-top uk-margin-large-top@m">
+                    <div class="uk-container uk-container-xsmall">
+                        <div class="uk-grid uk-child-width-1-1" data-uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-small uk-card-large@m uk-card-default uk-card-border uk-radius-medium uk-radius-large@m dark:uk-background-white-5">
+                                    <form action="?" class="uk-grid uk-grid-xsmall uk-child-width-1-1" data-uk-grid>
+                                        <div class="uk-width-1-2@m">
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input uk-form-medium uk-text-bold" type="text" placeholder="Name">
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-2@m">
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input uk-form-medium uk-text-bold" type="email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input uk-form-medium uk-text-bold" type="text" placeholder="Subject">
+                                        </div>
+                                        <div class="uk-form-controls">
+                                            <textarea class="uk-textarea uk-padding uk-height-xsmall uk-radius-large uk-text-bold" rows="5" placeholder="Type your message"></textarea>
+                                        </div>
+                                        <div class="uk-form-controls uk-flex-center">
+                                            <button type="submit" class="uk-button uk-button-primary uk-width-small@m uk-margin-auto">Send message</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-small uk-card-large@m">
+                                    <div class="uk-grid uk-child-width-1-2@m" data-uk-grid="">
+                                        <div class="uk-panel">
+                                            <h2 class="uk-h5 uk-h4@m">Other details</h2>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat perferendis eveniet mollitia omnis iste voluptatibus impedit quaerat modi facere est?</p>
+                                        </div>
+                                        <div class="uk-panel">
+                                            <ul class="uk-list">
+                                                <li><a href="tel:123-456-7890" class="uk-link-reset">123-456-7890</a></li>
+                                                <li><a href="mailto:support@nftmarket.com" class="uk-link-reset">support@nftmarket.com</a></li>
+                                                <li>120 HT Baker ST, Marylebone, Leeds</li>
+                                            </ul>
+                                            <ul class="uk-subnav uk-subnav-small uk-margin-top uk-text-gray-70 dark:uk-text-gray-40">
+                                                <li>
+                                                    <a aria-label="twitter" href="https://twitter.com/virtualravers"><i class="uk-icon-small brand-twitter"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a aria-label="facebook" href="https://facebook.com/virtualravers"><i class="uk-icon-small brand-facebook"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a aria-label="snapchat" href="https://snapchat.com/virtualravers"><i class="uk-icon-small brand-snapchat"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a aria-label="youtube-play" href="https://youtube.com/virtualravers"><i class="uk-icon-small brand-youtube-play"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a aria-label="reddit-alien" href="https://reddit.com/virtualravers"><i class="uk-icon-small brand-reddit-alien"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a aria-label="quora" href="https://quora.com/virtualravers"><i class="uk-icon-small brand-quora"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wrapper end -->
+
+        <!-- Footer start -->
+        <footer class="uni-footer uk-section uk-section-xlarge@m uk-border-top">
+            <div class="uk-container">
+                <div class="uk-panel">
+                    <img class="uk-position-top-left" width="32" src="assets/images/objects/ethereum-01.png" alt="object" style="top: 32%; left: 16%">
+                    <img class="uk-position-top-right" width="16" src="assets/images/objects/x.png" alt="object" style="top: 8%; right: 16%">
+                    <img class="uk-position-bottom-right" width="16" src="assets/images/objects/circle-01.png" alt="object" style="bottom: 24%; right: 40%">
+                    <img class="uk-position-bottom-left" width="24" src="assets/images/objects/circle-03.png" alt="object" style="bottom: -8%; left: 30%">
+                    <div class="uk-grid uk-flex-center uk-text-center" data-uk-grid>
+                        <div class="uk-width-large@m">
+                            <div class="uk-panel">
+                                <a href="index.html" class="uk-logo">
+                                    <img width="200" src="assets/images/nerko.svg" alt="Nerko">
+                                </a>
+                                <p class="uk-text-xlarge@m uk-margin-medium-top@m">Unlock the coolest real world with us!</p>
+                                <ul class="uk-subnav uk-subnav-small uk-flex-center uk-text-gray-40 uk-margin-top uk-margin-medium-top@m">
+                                    <li>
+                                        <a href="https://twitter.com/virtualravers"><span class="uk-icon uk-icon-medium@m unicon-logo-twitter"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://discord.com/virtualravers"><span class="uk-icon uk-icon-medium@m unicon-logo-discord"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://instagram.com/virtualravearena"><span class="uk-icon uk-icon-medium@m unicon-logo-instagram"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="uk-margin-medium uk-margin-3xlarge-top@m">
+                    <div class="uk-panel uk-text-small">
+                        <div class="uk-grid uk-child-width-auto@m uk-flex-center uk-flex-between@m uk-text-center uk-text-left@m" data-uk-grid>
+                            <div>
+                                <ul class="uk-subnav uk-subnav-small uk-text-muted uk-flex-center">
+                                    <li><a href="privacy.html">Privacy policy</a></li>
+                                    <li><a href="terms.html">Terms of use</a></li>
+                                    <li class="uk-margin-small-left">
+                                        <a href="#" data-uk-totop="" data-uk-scroll><i class="uk-icon uk-icon-small unicon-chevron-up"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="uk-flex-first@m uk-flex-center">
+                                <p class="uk-text-muted">© 2022 Nerko. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Footer end -->
+
+        <!-- include scripts -->
+        <script defer src="assets/js/jquery.min.js"></script>
+        <script defer src="assets/js/swiper-bundle.min.js"></script>
+        <script defer src="assets/js/feather.min.js"></script>
+        <script defer src="assets/js/typed.min.js"></script>
+        <script defer src="assets/js/anime.min.js"></script>
+        <script defer src="assets/js/app.js"></script>
+        <script defer src="assets/js/swiper-helper.js"></script>
+        <script defer src="assets/js/typed-helper.js"></script>
+        <script defer src="assets/js/anime-helper.js"></script>
+        <script defer src="assets/js/anime-helper-defined-timelines.js"></script>
+        <script>
+            // Schema toggle via URL
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const getSchema = urlParams.get("schema");
+            if (getSchema === "dark") {
+                document.documentElement.classList.add("uk-dark");
+                localStorage.setItem("darkMode", "1");
+            } else if (getSchema === "light") {
+                document.documentElement.classList.remove("uk-dark");
+                localStorage.setItem("darkMode", "0");
+            }
+        </script>
+    </body>
+</html>
