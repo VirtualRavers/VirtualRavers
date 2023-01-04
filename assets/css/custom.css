@@ -1,0 +1,42 @@
+.cd-headline.rotate-2 {
+    
+	letter-spacing: 0;
+
+/* Clip Background Image */
+
+	background: url(https://29thfloor.com/wp-content/uploads/2015/06/RINGRING.gif) repeat-y;
+	-webkit-background-clip: text;
+	background-size: 200%;
+	background-clip: text;
+
+/* Animate Background Image */
+
+	-webkit-text-fill-color: transparent;
+
+/* Activate hardware acceleration for smoother animations */
+
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+
+}
+.cd-headline.rotate-3 {
+    
+	letter-spacing: 0;
+
+/* Clip Background Image */
+
+	background: url(https://media0.giphy.com/media/Uc3toHuZmKSKU7qIfD/giphy.gif?cid=ecf05e47f2l50fhj75ffok2o3lu73d3um3g6ewpzs8qydsed.gif) repeat-y;
+	-webkit-background-clip: text;
+	background-size: 100%;
+	background-clip: text;
+
+/* Animate Background Image */
+
+	-webkit-text-fill-color: transparent;
+
+/* Activate hardware acceleration for smoother animations */
+
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+
+}
