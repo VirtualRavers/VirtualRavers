@@ -54,6 +54,8 @@
         </div>
 
         <!-- Menu modal -->
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>
         <div id="uni_mobile_menu" class="uni-mobile-menu uk-offcanvas" data-uk-offcanvas="mode: push; overlay: true; flip: true; selPanel: .uk-offcanvas-bar-panel;">
             <div class="uk-offcanvas-bar-panel uk-panel dark:uk-background-gray-100">
                 <div class="uni-mobile-menu-wrap uk-flex-column uk-flex-between" data-uk-height-viewport="offset-bottom: true;">
@@ -778,6 +780,14 @@
         <script defer src="assets/js/anime-helper-defined-timelines.js"></script>
         <script defer src="assets/js/jquery-2.1.1.js"></script>
         <script defer src="assets/js/main.js"></script>
+        <script type="text/javascript">
+            let progress = document.getElementById('progressbar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function(){
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+                progress.style.height = progressHeight + "%";
+            }
+        </script>
         <script>
             // Schema toggle via URL
             const queryString = window.location.search;
