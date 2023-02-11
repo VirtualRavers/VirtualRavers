@@ -54,6 +54,8 @@
         </div>
 
         <!-- Menu modal -->
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>
         <div id="uni_mobile_menu" class="uni-mobile-menu uk-offcanvas" data-uk-offcanvas="mode: push; overlay: true; flip: true; selPanel: .uk-offcanvas-bar-panel;">
             <div class="uk-offcanvas-bar-panel uk-panel dark:uk-background-gray-100">
                 <div class="uni-mobile-menu-wrap uk-flex-column uk-flex-between" data-uk-height-viewport="offset-bottom: true;">
@@ -76,10 +78,10 @@
                                     <li class="uk-nav-header">Home</li>
                                     <li><a href="index.html">🏠</a></li>
                                     <li class="uk-nav-header">Virtual Ravers World</li>
-                                    <li><a href="DAO-access.html">DAO Access</a></li>
+                                    <li><a href="#">DAO Access</a></li>
                                     <li><a href="index.html#uni_minting">Mint NFT</a></li>
-                                    <li><a href="https://virtualravearena.live">Virtual Rave Arena</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="#">Virtual Rave Arena</a></li>
+                                    <li><a href="#">Contact</a></li>
                                     <li class="uk-nav-header">Content &amp; Privacy</li>
                                     <li><a href="terms.html">Terms of use</a></li>
                                     <li><a href="privacy.html">Privacy Policy</a></li>
@@ -235,12 +237,12 @@
                     <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 200;">
                         <div class="uk-panel uk-text-center">
                             <h2 class="uk-h3 uk-h1@m"><iframe
-    src="https://gateway.ipfscdn.io/ipfs/QmRHAgPic1HeakAw9EU7WRjt4NPE19pWb8hCorRNhw4Zdy/erc721.html?contract=0xd0D0d144eb63F8ffFeEdE0F7a81353F65b287FBd&chainId=42161&theme=dark&primaryColor=yellow"
-    width="600px"
-    height="600px"
-    style="max-width:100%;"
-    frameborder="0"
-    ></iframe></h2>
+                                src="https://gateway.ipfscdn.io/ipfs/QmRHAgPic1HeakAw9EU7WRjt4NPE19pWb8hCorRNhw4Zdy/erc721.html?contract=0xd0D0d144eb63F8ffFeEdE0F7a81353F65b287FBd&chainId=42161&theme=dark&primaryColor=yellow"
+                                width="600px"
+                                height="600px"
+                                style="max-width:100%;"
+                                frameborder="0"
+                                ></iframe></h2>
                         </div>
                     </header>
                     <div class="uk-panel uk-margin-medium-top uk-margin-2xlarge-top@m" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 300;">
@@ -256,7 +258,7 @@
                                         </div>
                                         <div class="uk-panel uk-width-expand">
                                             <h3 class="uk-h5 uk-h4@m">Connect your wallet</h3>
-                                            <p>Use Metamask, Trust Wallet or any wallet to connect to the app.</p>
+                                            <p>Use Metamask, Trust Wallet or any wallet to connect to the app, select Arbitrum chain, it'll be automatically added.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -272,7 +274,7 @@
                                         </div>
                                         <div class="uk-panel uk-width-expand">
                                             <h3 class="uk-h5 uk-h4@m">Select your quantity</h3>
-                                            <p>How many unique virtual ravers you are going to mint.</p>
+                                            <p>How many unique virtual ravers you are going to mint [Max 5 per wallet].</p>
                                         </div>
                                     </div>
                                 </div>
@@ -622,11 +624,45 @@
             <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-medium uk-margin-large@m" src="assets/images/divider-01.svg" alt="Divider" data-anime="opacity:[0, 1]; translateY:[-24, 0]; onview: true; delay: 100;">
 
             <!-- team start -->
-          
-
+            <div class="uni-brands uk-section uk-section-xlarge@m uk-panel uk-overflow-hidden" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 300;">
+                <div class="uk-container">
+                    <div class="uk-panel">
+                        <header class="uk-panel uk-flex-center uk-flex-middle">
+                            <span class="uk-text-overline uk-text-bold">Partners and Frens:</span>
+                        </header>
+                        <div class="uk-grid uk-child-width-1-2 uk-child-width-expand@m uk-flex-middle uk-flex-center uk-grid uk-margin-medium-top" data-uk-grid>
+                            <div>
+                                <div class="uk-panel uk-overflow-hidden uk-card uk-card-small uk-card-medium@m uk-card-border uk-box-shadow-xsmall uk-radius-medium uk-radius-large@m">
+                                    <a href="https://bridge.arbitrum.io/" target="_blank" rel="noopener"><img class="uk-width-xsmall" src="../site/assets/images/arbirtum_logo.svg" alt="Arbitrum"></a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel uk-overflow-hidden uk-card uk-card-small uk-card-medium@m uk-card-border uk-box-shadow-xsmall uk-radius-medium uk-radius-large@m">
+                                    <a href="https://hyperbassrecords.com/" target="_blank" rel="noopener"><img class="uk-width-xsmall" src="../site/assets/images/hyperbass.svg" alt="Hyperbass" data-uk-svg></a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel uk-overflow-hidden uk-card uk-card-small uk-card-medium@m uk-card-border uk-box-shadow-xsmall uk-radius-medium uk-radius-large@m">
+                                    <a href="https://tokenproof.xyz/" target="_blank" rel="noopener"><img class="uk-width-xsmall" src="../site/assets/images/tokenproof.svg" alt="Tokenproof" data-uk-svg></a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel uk-overflow-hidden uk-card uk-card-small uk-card-medium@m uk-card-border uk-box-shadow-xsmall uk-radius-medium uk-radius-large@m">
+                                    <a href="https://audius.co/signup?ref=SunshineVendetta/" target="_blank" rel="noopener"><img class="uk-width-xsmall" src="../site/assets/images/audius.svg" alt="Audius" data-uk-svg></a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel uk-overflow-hidden uk-card uk-card-small uk-card-medium@m uk-card-border uk-box-shadow-xsmall uk-radius-medium uk-radius-large@m">
+                                    <a href="https://galxe.com/virtualravers/" target="_blank" rel="noopener"><img class="uk-width-xsmall" src="../site/assets/images/galxe.svg" alt="Galxe" data-uk-svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- team end -->
+            <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-medium uk-margin-large@m" src="assets/images/divider-01.svg" alt="Divider" data-anime="opacity:[0, 1]; translateY:[-24, 0]; onview: true; delay: 100;">
 
-            <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-medium uk-margin-large@m" src="" alt="" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
 
             <!-- faq start -->
             <div id="uni_faq" class="uni-faq uk-section uk-section-large@m uk-panel uk-overflow-hidden uk-padding-2xlarge-bottom@m">
@@ -778,6 +814,14 @@
         <script defer src="assets/js/anime-helper-defined-timelines.js"></script>
         <script defer src="assets/js/jquery-2.1.1.js"></script>
         <script defer src="assets/js/main.js"></script>
+        <script type="text/javascript">
+            let progress = document.getElementById('progressbar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function(){
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+                progress.style.height = progressHeight + "%";
+            }
+        </script>
         <script>
             // Schema toggle via URL
             const queryString = window.location.search;
